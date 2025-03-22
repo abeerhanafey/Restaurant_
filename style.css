@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.project {
+    width: 100%;
+    /* height: 100vh; */
+    background-image: linear-gradient(rgba(84, 37, 1, 0.2), rgba(80, 41, 1, 0.241)), url(./imgs/bg3.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    padding: 10vh 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.project .content {
+    width: 80%;
+    /* height: 80vh; */
+    padding: 2vh 1% 13vh;
+    background-color: rgba(56, 28, 0, 0.77);
+    background-image: linear-gradient(rgba(56, 28,0,.26), rgba(56, 28,0,.26)),url(./imgs/sosososos.jpg);
+    background-size: 100% 100%;
+    border: 8px solid rgb(37, 24, 0);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+}
+
+.project .content .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.project .content .navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Barriecito", system-ui;
+    color: bisque;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.project .content .navbar .logo img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.project .content .navbar ul {
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.project .content .navbar ul li a {
+    color: bisque;
+    text-shadow: 2px 2px 2px rgb(104, 52, 1);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Della Respira", serif;
+    padding: 10px;
+}
+
+.project .content .banner {
+    display: flex;
+    align-items: flex-end;
+}
+
+.project .content .banner .arrows {
+    width: 20%;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 10px;
+    right: 130px;
+}
+
+.project .arrows i {
+    font-size: 50px;
+    color: rgba(255, 228, 196, 0.491);
+}
+
+.project .content .about {
+    width: 50%;
+    margin-top: 100px;
+    color: bisque;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.project .content .about h2 {
+    font-family: "Barriecito", system-ui;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.project .content .about h3 {
+    font-family: "Della Respira", serif;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.project .content .about p {
+    font-family: "Della Respira", serif;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.project .content .about .btns button {
+    color: bisque;
+    background-color: rgb(249, 138, 11);
+    font-family: "Della Respira", serif;
+    font-size: 18px;
+    border: none;
+    padding: 7px 10px;
+    margin: 0 15px;
+    border: 2px solid bisque;
+    text-transform: capitalize;
+}
+
+.project .content .about .btns {
+    display: flex;
+    width: 70%;
+}
+
+.project .content .about .btns button:last-child{
+    background-color: transparent;
+    border: 2px solid bisque;
+}
+
+.project .content .banner .arrows i:hover  {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    color: bisque;
+}
+
+.project .content .navbar ul li a:hover {
+    color: rgb(37, 24, 0);
+    background-color: rgba(255, 228, 196, 0.371);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.project .content .about .btns button:hover {
+    background-color: bisque;
+    color: rgb(37, 24, 0);
+}
+
+.project .content .banner .booking {
+    width: 75%;
+    margin-top: -50px;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: -50px;
+    display: none;
+}
+
+.project .content .banner .booking img {
+    width: 90%;
+    height: 570px;
+}
+
+.booking-container {
+    /* background: white; */
+    padding: 20px;
+    width: 35%;
+    margin: 80px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: absolute;
+    bottom: -30px;
+    margin-left: 25px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: rgb(104, 52, 1);
+    font-family: "Barriecito", system-ui;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#cancel {
+    background-color: #482300;
+    color: white;
+}
+
+#cancel:hover {
+    background-color: #c97d2c;
+}
+
+button[type="submit"] {
+    background-color: #fc8c03;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #c97d2c;
+}
+
+.menu {
+    width: 95%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 100px;
+    margin: 50px auto;
+}
+
+.menu .meal {
+    width: 20%;
+    position: relative;
+}
+
+.menu .meal .mealDetails {
+    width: 100%;
+    padding: 10px 20px 25px 20px;
+    background-color: #fc8c03;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px 20px 0 20px;
+    -webkit-border-radius: 20px 20px 0 20px;
+    -moz-border-radius: 20px 20px 0 20px;
+    -ms-border-radius: 20px 20px 0 20px;
+    -o-border-radius: 20px 20px 0 20px;
+    position: relative;
+    color: bisque;
+    font-size: 18px;
+    font-family: "Della Respira", serif;
+}
+
+.menu .meal .mealDetails i {
+    position: absolute;
+    right: 30px;
+}
+
+.menu .meal .mealDetails i.fa-shopify {
+    bottom: 20px;
+}
+
+.menu .meal .mealDetails img {
+    width: 250px;
+    margin: -40px;
+}
+
+.menu .meal .fa-arrow-right {
+    color: bisque;
+    background-color: #fc8c03;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -ms-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
+}
+
+.menu .meal:nth-child(2),
+.menu .meal:nth-child(4) {
+    transform: translateY(80px);
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+}
+
+.project .content .navbar label,
+.project .content .navbar input {
+    display: none;
+}
+
+@media (max-width: 1350px) {
+    .project .content {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .project .content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .menu .meal {
+        width: 33%;
+    }
+
+    .project .content .about {
+        width: 70%;
+    }
+
+    .project .content .banner .booking {
+        width: 95%;
+    }
+}
+
+@media (max-width: 960px) {
+    .menu .meal {
+        width: 33%;
+    }
+
+    .project .content .navbar {
+        flex-wrap: wrap;
+    }
+
+    .project .content .navbar label {
+        font-size: 30px;
+        display: flex;
+        color: #fc8c03;
+    }
+
+    .project .content .navbar ul {
+        width: 95%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;
+        */align-items: flex-start;
+        gap: 10px;
+        list-style: none;
+        background-color: #40230163;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-top: 3px solid #fe7c03;
+        box-shadow: 6px 6px 3px #fc7b03;
+        margin-top: 20px;
+        transform-origin: right;
+        transform: rotateY(90deg);
+        -webkit-transform: rotateY(90deg);
+        -moz-transform: rotateY(90deg);
+        -ms-transform: rotateY(90deg);
+        -o-transform: rotateY(90deg);
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        z-index: 10;
+}
+
+.project .content .navbar input:checked ~ ul {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+
+.project .content .banner {
+    margin-top: -250px;
+}
+}
+
+@media (max-width: 800px) {
+    .project .content .banner .booking {
+        width: 100%;
+    }
+
+    .project .content .banner .booking img {
+        width: 1500px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .project .content .banner .about {
+        width: 100%;
+    }
+
+    .project .content .banner .menu .meal {
+        width: 80%;
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+}
+
+.project .content .about .btns {
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+}
+}
+
+@media (max-width: 500px) {
+    .project .content .about .btns {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project .content .banner .about h2 {
+        font-size: 40px;
+    }
+
+    .project .content .banner .about h3 {
+        font-size: 20px;
+    }
+
+    .project .content .banner .about p {
+        font-size: 16px;
+    }
+
+    .project .content .banner .booking img {
+        display: none;
+    }
+
+    .project .content .banner .booking {
+        margin-top: 0px;
+    }
+
+    .booking-container {
+        position: relative;
+        background-color: #ccc;
+        width: 100%;
+        right: -30px;
+    }
+}
+

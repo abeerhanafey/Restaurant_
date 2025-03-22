@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat:wght@400..700&family=Della+Respira&family=Emblema+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="project">
+
+        <div class="content">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./imgs/logo1.jpg" alt="logoImg">
+                    <h1>Resto</h1>
+                </div>
+                <label for="check">
+                    <i class="fa-solid fa-bars-staggered fa-beat"></i>
+                </label>
+                <input type="checkbox" id="check">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="banner">
+                <!-- start about  -->
+                <div class="about">
+                    <h2>for fine dine</h2>
+                    <h3>best place, best service</h3>
+                    <p>we will be happy to see you in our restaurant</p>
+                    <div class="btns">
+                        <button>book a table</button>
+                        <button>see menu</button>
+                    </div>
+                </div>
+                <!-- start booking  -->
+                <div class="booking">
+                    <img src="./imgs/phone1 (3).png" alt="">
+                    <div class="booking-container">
+                        <h2>Table Reservation</h2>
+                        <form id="bookingForm">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" required>
+                
+                            <label for="time">Time:</label>
+                            <input type="time" id="time" required>
+                
+                            <label for="guests">Guests:</label>
+                            <input type="number" id="guests" min="1" max="20" value="1" required>
+                
+                            <div class="buttons">
+                                <button type="button" id="cancel">Cancel</button>
+                                <button type="submit">Confirm</button>
+                            </div>
+                        </form>
+                    </div>
+                
+                </div>
+                <!-- start menu -->
+                <div class="menu">
+                    <div class="meal">
+                        <div class="mealDetails">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="./imgs/menu.png" alt="">
+                            <p>hot crispy burger</p>
+                            <p>10$</p>
+                            <i class="fa-brands fa-shopify"></i>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="meal">
+                        <div class="mealDetails">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="./imgs/menu.png" alt="">
+                            <p>hot crispy burger</p>
+                            <p>10$</p>
+                            <i class="fa-brands fa-shopify"></i>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="meal">
+                        <div class="mealDetails">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="./imgs/menu.png" alt="">
+                            <p>hot crispy burger</p>
+                            <p>10$</p>
+                            <i class="fa-brands fa-shopify"></i>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="meal">
+                        <div class="mealDetails">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="./imgs/menu.png" alt="">
+                            <p>hot crispy burger</p>
+                            <p>10$</p>
+                            <i class="fa-brands fa-shopify"></i>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+</html>
